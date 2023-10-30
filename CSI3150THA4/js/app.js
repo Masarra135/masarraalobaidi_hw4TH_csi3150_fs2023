@@ -19,16 +19,5 @@ function filterCards() {
     const cardPrice = parseFloat(card.getAttribute("price"));
     const cardMake = card.getAttribute("type");
     const cardColor = card.getAttribute("color");
-
-    if (
-      cardPrice >= minPrice &&
-      cardPrice <= maxPrice &&
-      (selectedMake === "AllMakes" || cardMake === selectedMake) &&
-      (selectedColor === "AllColors" || cardColor === selectedColor)
-    ) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
   });
 }
