@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Used Cars Website</title>
+
+    <link rel="stylesheet" href="./css/Style.css" />
+  </head>
+
+  <body>
+    <header id="page_header">
+      <h1>Used Cars</h1>
+    </header>
+
+    <nav class="navBar">
+      <button type="button" onclick="alert('Enter all Fields to show result')">
+        Go
+      </button>
+
+      <div class="filter">
+        <form id="filterForm">
+          <label for="priceMin">Min Price:</label>
+          <input type="number" id="priceMin" />
+          <label for="priceMax">Max Price:</label>
+          <input type="number" id="priceMax" />
+          <label for="makeFilter">Make:</label>
+          <select id="makeFilter">
+            <option value="AllMakes">All Makes</option>
+            <option value="BMW">BMW</option>
+            <option value="Cadillac">Cadillac</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Dodge">Dodge</option>
+            <option value="Ford">Ford</option>
+            <option value="Honda">Honda</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Jaguar">Jaguar</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Star-Fleet">Star-Fleet</option>
+            <option value="Subaru">Subaru</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Volkswagon">Volkswagon</option>
+          </select>
+          <label for="colorFilter">Color:</label>
+          <select id="colorFilter">
+            <option value="AllColors">All Colors</option>
+            <option value="Silver">Silver</option>
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+          </select>
+          <button type="button" id="filterButton">Apply Filters</button>
+        </form>
+      </div>
+    </nav>
+
+    <main id="Cars">
+      <!-- <div class="Dodge_challenger"> -->
+      <div class="card">
+        <img
+          src="./download (4).jpeg"
+          alt="Dodge Challenger"
+          style="width: 100%"
+        />
+        <h1>Dodge Challenger</h1>
+        <p class="price">Price: $24,000</p>
+        <h4 class="milage">Milage: 30000</h4>
+        <h4 class="color">Color: Red</h4>
+        <h4 class="gasMilage">Gas Milage: 19 mpg city, 30 mpg highway</h4>
+        <h4 class="year">Year: 2015</h4>
+        <h4 class="type">Year: Challenger</h4>
+        <p><button>More Details</button></p>
+      </div>
+      <!-- <div class="Tesla"> -->
+      <div class="card">
+        <img src="./download (5).jpeg" alt="Tesla" style="width: 100%" />
+        <h1>Tesla Model S</h1>
+        <p class="price">Price:$55,000</p>
+        <h4 class="milage">Milage: 18000</h4>
+        <h4 class="color">Color: Red</h4>
+        <h4 class="gasMilage">Gas Milage: Electric (370 miles per charge)</h4>
+        <h4 class="year">Year: 2019</h4>
+        <h4 class="type">Year: Model S</h4>
+        <p><button>More Details</button></p>
+      </div>
+      <!-- <div class="Porche"> -->
+      <div class="card">
+        <img src="./download (6).jpeg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Porche Cayenne</h1>
+        <p class="price">Price: $68,000</p>
+        <h4 class="milage">Milage: 22000</h4>
+        <h4 class="color">Color: Black</h4>
+        <h4 class="gasMilage">20 mpg city, 26 mpg highway</h4>
+        <h4 class="year">Year: 2020</h4>
+        <h4 class="type">Year: Cayenne</h4>
+        <p><button>More Details</button></p>
+      </div>
+      <!-- <div class="Toyota"> -->
+      <div class="card">
+        <img src="./download.jpeg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Toyota Camry</h1>
+        <p class="price">Price: $18,000</p>
+        <h4 class="milage">Milage: 30000</h4>
+        <h4 class="color">Color: Silver</h4>
+        <h4 class="gasMilage">25 mpg city, 35 mpg highway</h4>
+        <h4 class="year">Year: 2018</h4>
+        <h4 class="type">Type: Camry</h4>
+        <p><button>More Details</button></p>
+      </div>
+
+      <!-- <div class="Ford"> -->
+      <div class="card">
+        <img
+          src="./2015-ford-fusion-2014-ford-fusion-car-ford-motor-company-ford-fusion-hybrid-ford.jpg"
+          alt="Denim Jeans"
+          style="width: 100%"
+        />
+        <h1>Ford Fusion</h1>
+        <p class="price">Price: $35,000</p>
+        <h4 class="milage">Milage: 30000</h4>
+        <h4 class="color">Color: Red</h4>
+        <h4 class="gasMilage">28 mpg city, 38 mpg highway</h4>
+        <h4 class="year">Year: 2017</h4>
+        <h4 class="type">Type: Ford</h4>
+        <p><button>More Details</button></p>
+      </div>
+
+      <div class="card">
+        <img
+          src="./2017-chevrolet-malibu-car-general-motors-chevrolet-chevelle-chevrolet-malibu.jpg"
+          alt="Denim Jeans"
+          style="width: 100%"
+        />
+        <h1>Chevrolet Malibu</h1>
+        <p class="price">Price: $12,000</p>
+        <h4 class="milage">Milage: 50000</h4>
+        <h4 class="color">Color: white</h4>
+        <h4 class="gasMilage">25 mpg city, 37 mpg highway</h4>
+        <h4 class="year">Year: 2015</h4>
+        <h4 class="type">Type: Chevrolet</h4>
+        <p><button>More Details</button></p>
+      </div>
+
+      <div class="card">
+        <img
+          src="./90-902460_hyundai-elantra-2019-png-transparent-png.png"
+          alt="Denim Jeans"
+          style="width: 100%"
+        />
+        <h1>Hyundai Elantra</h1>
+        <p class="price">Price: $12,000</p>
+        <h4 class="milage">Milage: 50000</h4>
+        <h4 class="color">Color: white</h4>
+        <h4 class="gasMilage">25 mpg city, 37 mpg highway</h4>
+        <h4 class="year">Year: 2015</h4>
+        <h4 class="type">Type: Hyundai</h4>
+        <p><button>More Details</button></p>
+      </div>
+
+      <div class="card">
+        <img src="./download (1).jpeg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Honda Civic</h1>
+        <p class="price">Price: $14,000</p>
+        <h4 class="milage">Milage: 45000</h4>
+        <h4 class="color">Color: Silver</h4>
+        <h4 class="gasMilage">30 mpg city, 40 mpg highway</h4>
+        <h4 class="year">Year: 2016</h4>
+        <h4 class="type">Type: Honda</h4>
+        <p><button>More Details</button></p>
+      </div>
+
+      <div class="card">
+        <img src="./download (2).jpeg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Mazda CX-5</h1>
+        <p class="price">Price: $19,000</p>
+        <h4 class="milage">Milage: 32000</h4>
+        <h4 class="color">Color: Red</h4>
+        <h4 class="gasMilage">24 mpg city, 31 mpg highway</h4>
+        <h4 class="year">Year: 2017</h4>
+        <h4 class="type">Type: Mazda</h4>
+        <p><button>More Details</button></p>
+      </div>
+
+      <div class="card">
+        <img src="./download (3).jpeg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Kia Sorento</h1>
+        <p class="price">Price: $17,000</p>
+        <h4 class="milage">Milage: 28000</h4>
+        <h4 class="color">Color: Brown</h4>
+        <h4 class="gasMilage">22 mpg city, 29 mpg highway</h4>
+        <h4 class="year">Year: 2018</h4>
+        <h4 class="type">Type: Kia</h4>
+        <p><button>More Details</button></p>
+      </div>
+
+      <div class="card">
+        <img
+          src="./kisspng-2-17-cadillac-xt5-2-19-cadillac-xt5-car-general-mo-cadillac-xt5-2-16-vx-2-17-bing-images-5bf47410835848.246976371542747152538.jpg"
+          alt="Denim Jeans"
+          style="width: 100%"
+        />
+        <h1>Cadillac XT5</h1>
+        <p class="price">Price: $32,000</p>
+        <h4 class="milage">Milage: 28000</h4>
+        <h4 class="color">Color: Gold</h4>
+        <h4 class="gasMilage">19 mpg city, 27 mpg highway</h4>
+        <h4 class="year">Year: 2017</h4>
+        <h4 class="type">Type: Cadillac</h4>
+        <p><button>More Details</button></p>
+      </div>
+
+      <div class="card">
+        <img
+          src="./kisspng-2-17-subaru-outback-subaru-forester-car-2-19-subar-lease-a-new-2-18-subaru-outback-awd-3-6r-limited-4-5bab0710224693.8500435415379351201404.jpg"
+          alt="Denim Jeans"
+          style="width: 100%"
+        />
+        <h1>Subaru Outback</h1>
+        <p class="price">Price: $14,000</p>
+        <h4 class="milage">Milage: 60000</h4>
+        <h4 class="color">Color: Grey</h4>
+        <h4 class="gasMilage">22 mpg city, 30 mpg highwayy</h4>
+        <h4 class="year">Year: 2014</h4>
+        <h4 class="type">Type: Subaru</h4>
+        <p><button>More Details</button></p>
+      </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
